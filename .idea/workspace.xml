@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a01b1265-ed7b-4e59-9c80-6c0bc65cf153" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/services/LibrarianService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/sena/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/sena/repository/LibrarianRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/repository/LibrarianRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/sena/services/LibrarianService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/sena/services/LibrarianService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.Main.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "pruebas",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/maovi/Desktop/ejercicio/books2.0",
@@ -97,7 +96,8 @@
       <option name="presentableId" value="Default" />
       <updated>1726175745379</updated>
       <workItem from="1726175746489" duration="4629000" />
-      <workItem from="1726185950765" duration="9431000" />
+      <workItem from="1726185950765" duration="9718000" />
+      <workItem from="1726232690271" duration="3200000" />
     </task>
     <servers />
   </component>

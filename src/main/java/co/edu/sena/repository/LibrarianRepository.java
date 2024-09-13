@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface LibrarianRepository extends CrudRepository<Librarian, String> {
-    public Optional<Librarian> findByCode(String code);
+    public Librarian findByCode(String code);
 
     //public Optional<Librarian> putLibrarian(Librarian librarian);
 }

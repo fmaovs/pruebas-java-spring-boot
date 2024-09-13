@@ -15,13 +15,7 @@ public class LibrarianService {
     @Autowired
     LibrarianRepository librarianRepository;
 
-    public List<Librarian> getAllLibrarian(){
-        return (List<Librarian>) this.librarianRepository.findAll();
-    };
 
-    public Optional<Librarian> getLibrarianByCode(String code){
-        return this.librarianRepository.findByCode(code);
-    }
 
 
 }

@@ -25,39 +25,55 @@ public class Main implements CommandLineRunner {
     }
 
     @Autowired
-    private UserRepository r;
+    private LibrarianRepository r;
 
-    @Autowired
-    private LibrarianService librarian;
+    public List<Librarian> getAllLibrarian(){
+        return (List<Librarian>) this.r.findAll();
+    };
+
+    public Librarian getLibrarianByCode(String code){
+        return this.r.findByCode(code);
+    }
 
     @Override
     public void run(String... args) throws Exception {
-        /*Scanner sc = new Scanner(System.in);
-            String nombre = sc.nextLine();
-            String username = sc.nextLine();
-            String email = sc.nextLine();
-            String password = sc.nextLine();
-            String code = sc.nextLine();
-            Librarian librarian = new Librarian( = nombre, username, email, password, code);
-            r.save(librarian);
-            System.out.println("Desea continuar? ingrese 1 para si, 0 para no");*/
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter name");
+        String name = sc.nextLine();
+        System.out.println("Enter username");
+        String username = sc.nextLine();
+        System.out.println("Enter password");
+        String password = sc.nextLine();
+        System.out.println("Enter email");
+        String email = sc.nextLine();
+        System.out.println("Enter code");
+        String code = sc.nextLine();
+        Librarian librarian = new Librarian(name, username, password, email, code);
+        r.save(librarian);
 
 
         //Librarian k = new  Librarian("Cristian", "c21" , "sdfsd" , "asdfsaf" , "347");
         //r.save(k);
 
-        List<Librarian> lis = this.librarian.getAllLibrarian();
+        List<Librarian> lis = getAllLibrarian();
 
+        System.out.println("Librarians: ");
         for (Librarian lib : lis) {
             System.out.println(lib.getId());
             System.out.println(lib.getName());
             System.out.println(lib.getEmail());
             System.out.println(lib.getUsername());
+            System.out.println("----------------");
         }
 
-        Optional<Librarian> l1 = this.librarian.getLibrarianByCode("347");
-        l1.ifPresent(lib -> lib.setEmail("laprueba@gmail.com" ));
-        r.save(l1.get());
+        System.out.println("Enter code of librarian");
+        String c = sc.nextLine();
+        Librarian l1 = getLibrarianByCode(c);
+        System.out.println("Enter new email of " + l1.getName());
+        String e = sc.nextLine();
+        l1.setEmail(e);
+        r.save(l1);
+        System.out.println("Librarians saved");
 
 
 
